@@ -1,22 +1,21 @@
 #!/usr/bin/env bash
-#Give you information about the holbertonschool file.
+# This script is displaying "Best School" 10 times
+file_h="bestschool"
 
-file="bestschool"
-
-if [ -e "$file" ]
+if [ -e "$file_h" ]
 then
-    echo "bestschool file exists"
 
-    if [ -s "$file" ]
+    echo "bestschool file exists"
+    if [ -s "$file_h" ]
     then
-	echo "bestschool file is not empty"
+        echo "bestschool file is not empty"
     else
-	echo "bestschool file is empty"
+        echo "bestschool file is empty"
     fi
 
-    if [ -f "$file" ]
+    if [ -f "$file_h" ]
     then
-       echo "bestschool is a regular file"
+        echo "bestschool is a regular file"
     fi
 else
     echo "bestschool file does not exist"
